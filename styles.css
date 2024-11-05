@@ -1,0 +1,496 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Header styling */
+header {
+    background-color: #232324;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header nav a:hover,
+header nav a.active {
+  color: #57cace;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #57cace;
+}
+
+/* Search bar styling */
+.search-bar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    width: 300px;
+    border: 2px solid #222527;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #191a1b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #3b5670;
+}
+
+/* News section styling */
+.news-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+}
+
+.news-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #3c5f85;
+}
+
+.news-intro {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* News cards layout */
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: scale(1.02);
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.news-content p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #3c5f85;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    color: #2d4c6a;
+}
+
+/* Info section styling */
+.info-section {
+    padding: 40px 20px;
+    background-image: url('./TRCL23-03-Parallax-TimRawlinson_6.webp');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.info-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.info-section h2,
+.info-section .catchphrase,
+.info-section .info-description {
+    position: relative;
+    z-index: 1;
+}
+
+.info-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.catchphrase {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-description {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Video Section */
+.video-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .video-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .video-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .video-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .video-card video {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .video-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  .video-card p {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 0 1rem 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Carousel Controls */
+  .carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+
+  .trends-section {
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background for contrast */
+    margin: 20px auto;
+    max-width: 1200px; /* Center and limit width */
+    border-radius: 8px; /* Rounded corners for a soft look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .trends-section h2 {
+    font-size: 2rem;
+    color: #242525; /* Primary blue color for headings */
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .trends-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px; /* Space between trend cards */
+  }
+  
+  .trend-card {
+    background-color: #f9f9f9; /* Light background for each card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for separation */
+    overflow: hidden; /* Ensures the image fits within rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling on hover */
+  }
+  
+  .trend-card:hover {
+    transform: scale(1.03); /* Slightly enlarge card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+  
+  .trend-card img {
+    width: 100%; /* Full width for responsiveness */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+  }
+  
+  .trend-card h3 {
+    font-size: 1.4rem;
+    color: #333; /* Dark color for contrast against light background */
+    margin: 15px 0 10px;
+    padding: 0 15px; /* Padding to align with paragraph */
+  }
+  
+  .trend-card p {
+    font-size: 1rem;
+    color: #666; /* Slightly muted color for text */
+    padding: 0 15px 20px; /* Padding to align with header and bottom spacing */
+    line-height: 1.5; /* Increase readability */
+  }
+  
+  /* Responsive adjustments for mobile devices */
+  @media (max-width: 768px) {
+    .trends-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .trend-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .trend-card p {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Tweets Section */
+/* Tweets Section */
+.tweets-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tweets-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tweets-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px; /* Set a max-width for better alignment */
+  }
+  
+  .tweet-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 1rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tweet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tweet-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .tweet-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .tweet-card p span {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .tweets-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tweet-card {
+      width: 90%;
+    }
+  }
+  
+  
+  
+  .news-container, .video-container, .trends-container, .tweets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .news-card, .video-card, .trend-card, .tweet-card {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s; /* Smooth hover effect */
+  }
+  
+  .news-card:hover, .video-card:hover, .trend-card:hover, .tweet-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+  }
+  
+  footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center align the content */
+}
+
+.newsletter {
+    margin-top: 20px; /* Space above the newsletter section */
+}
+
+.newsletter h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+#newsletter-form {
+    display: flex; /* Align elements in a row */
+    justify-content: center; /* Center align the form elements */
+}
+
+#newsletter-email {
+    padding: 10px; /* Space inside the email input */
+    border: none; /* Remove default border */
+    border-radius: 5px 0 0 5px; /* Rounded corners for the left side */
+    width: 250px; /* Set a width for the input */
+}
+
+#newsletter-form button {
+    padding: 10px 15px; /* Space inside the button */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 0 5px 5px 0; /* Rounded corners for the right side */
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+#newsletter-form button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+  

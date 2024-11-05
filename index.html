@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esaias Video Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h1>Esaias Blog</h1>
+        <!-- Search Bar -->
+  <section class="search-bar">
+    <input type="text" placeholder="Search...">
+    <button onclick="searchContent()">Search</button>
+  </section>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="videos.html">Videos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Information Section -->
+<section id="info" class="info-section">
+    <h2>Welcome to Esaias Blog</h2>
+    <p class="catchphrase">Connecting You to the Latest News and Trends in Technology!</p>
+    <p class="info-description">
+        At Modern Video Blog, we curate the most engaging and informative video content that keeps you ahead of the curve.
+    </p>
+    <p class="info-description">
+        Join our community of like-minded individuals and stay updated with breaking news, insightful analyses, and emerging trends. Our videos cover a diverse range of topics, ensuring that there's something for everyone.
+    <p class="info-description">
+        Subscribe to our newsletter to receive exclusive updates, tips, and invitations to live events. Together, let's navigate the exciting world of technology and innovation!
+    </p>
+</section>
+
+<!-- Latest News Section -->
+<section id="news" class="news-section">
+    <h2>Latest News</h2>
+    <p class="news-intro">Catch up with the latest insights, trends, and developments shaping the world today.</p>
+
+    <div class="news-container">
+        <div class="news-card">
+            <img src="./How-to-trade-stocks.jpg" alt="Stock Market Trends">
+            <div class="news-content">
+                <h3>Breaking News: Major Event Happening Now</h3>
+                <p>Stay informed about the latest developments that could impact the industry and the market. From emerging tech to major policy changes, this event is reshaping the landscape.</p>
+                <a href="news.html" class="read-more">Read More</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            <img src="./istockphoto-857146092-612x612.jpg" alt="Industry Trends">
+            <div class="news-content">
+                <h3>Trends: What's Hot in the Industry</h3>
+                <p>Dive into the hottest trends redefining how we work and interact with technology. This is a must-read for professionals and enthusiasts eager to stay ahead.</p>
+                <a href="news.html" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="./screenshot20230623-9891-7aobb4.png" alt="Tech Future Predictions">
+            <div class="news-content">
+                <h3>Analysis: The Future of Technology</h3>
+                <p>Experts weigh in on the future of AI, cybersecurity, and tech innovations. Discover what trends are here to stay and which ones may disrupt the industry.</p>
+                <a href="news.html" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="./v4-460px-Check-What-is-Trending-on-Twitter-Step-2-Version-2.jpg.jpeg" alt="Community Events">
+            <div class="news-content">
+                <h3>Community: Local Events to Check Out</h3>
+                <p>Discover community events, workshops, and gatherings where you can connect with others who share your passion for technology and innovation.</p>
+                <a href="news.html" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Video Previews Section -->
+  <section id="videos" class="video-section">
+    <h2>Latest Videos</h2>
+    <div class="video-container">
+      <div class="video-card active" data-category="category1">
+        <video src="./a_new_futuristic_car_33758b.mp4" muted loop autoplay></video>
+        <h3>Exploring the Future of Electric Cars</h3>
+        <p>Discover the latest advancements in electric car technology, featuring a new model designed for ultimate efficiency and sustainability. Perfect for anyone interested in the future of eco-friendly vehicles.</p>
+      </div>
+      <div class="video-card" data-category="category2">
+        <video src="./a_next_gen_headphone_d8b0f9.mp4" muted loop autoplay></video>
+        <h3>Next-Gen Headphones: A New Listening Experience</h3>
+        <p>Dive into the world of high-fidelity audio with these cutting-edge headphones, offering unmatched sound quality and innovative features. Great for audiophiles looking for a new way to experience music.</p>
+      </div>
+      <div class="video-card" data-category="category1">
+        <video src="./a_next_gen_headphone_d8b0f9.mp4" muted loop autoplay></video>
+        <h3>The Evolution of Personal Audio</h3>
+        <p>From wired headphones to wireless earbuds, explore how personal audio devices have evolved over the years. This video showcases some iconic designs and breakthrough technology in the industry.</p>
+      </div>
+      <div class="video-card" data-category="category2">
+        <video src="./a_3d_animation_of_a_camera_move_left_e658bf.mp4" muted loop autoplay></video>
+        <h3>Virtual Reality in Modern Gaming</h3>
+        <p>Take a tour through the latest developments in VR gaming. This video covers new gaming setups, immersive gameplay, and what to expect from the future of virtual entertainment.</p>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button class="prev" onclick="changeVideo(-1)">&#10094;</button>
+      <button class="next" onclick="changeVideo(1)">&#10095;</button>
+    </div>
+  </section>
+
+ <!-- Trends Section -->
+<section class="trends-section">
+    <h2>Current Trends</h2>
+    <div class="trends-container">
+      
+      <!-- Trend Card 1 -->
+      <div class="trend-card">
+        <img src="./360_F_548868492_RvvZQBJvB0zsQ2tIUg8uarz15WAxMrxD.jpg" alt="Innovations in Technology">
+        <h3>Trend 1: New Innovations in Technology</h3>
+        <p>The tech industry continues to revolutionize with breakthroughs in AI, quantum computing, and green energy. Discover how these innovations are transforming everyday life and driving the future forward.</p>
+        <a href="innovation.html" class="read-more">Learn More</a>
+      </div>
+  
+      <!-- Trend Card 2 -->
+      <div class="trend-card">
+        <img src="./istockphoto-857146092-612x612.jpg" alt="Social Media Changes">
+        <h3>Trend 2: Social Media's Impact on Society</h3>
+        <p>Social media is evolving faster than ever, influencing trends, cultures, and consumer behaviors. From short-form videos to AI-driven content recommendations, explore what’s shaping the social landscape today.</p>
+        <a href="social-media.html" class="read-more">Read More</a>
+      </div>
+  
+      <!-- Trend Card 3 -->
+      <div class="trend-card">
+        <img src="./CalmCoolCollective.jpg" alt="Health and Wellness Movement">
+        <h3>Trend 3: The Rise of Health and Wellness</h3>
+        <p>People are prioritizing well-being like never before, embracing holistic health, mental wellness, and eco-friendly products. Dive into the movement that’s reshaping lifestyles around the globe.</p>
+        <a href="wellness.html" class="read-more">Discover More</a>
+      </div>
+      
+    </div>
+  </section>  
+
+  <!-- Tweets Section -->
+  <section class="tweets-section">
+    <h2>Recent Tweets</h2>
+    <div class="tweets-container">
+      <div class="tweet-card">
+        <img src="./TRCL23-03-Parallax-TimRawlinson_6.webp" alt="Tweet Image">
+        <p>@username: Excited about the new video! #VideoBlog</p>
+      </div>
+      <div class="tweet-card">
+        <img src="./parallax-image-1024x585.webp" alt="Tweet Image">
+        <p>@anotheruser: Check out the latest trends in technology! #TechTrends</p>
+      </div>
+      <div class="tweet-card">
+        <img src="./Market Research Trends 2024 - Predictions from Thought Leaders.webp" alt="Tweet Image">
+        <p>@yetanotheruser: Great insights on community events this weekend! #LocalNews</p>
+      </div>
+      <div class="tweet-card">
+        <img src="./Market Research Trends 2024 - Predictions from Thought Leaders.webp" alt="Tweet Image">
+        <p>@yetanotheruser: Great insights on community events this weekend! #LocalNews</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Modern Video Blog. All Rights Reserved.</p>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <form id="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

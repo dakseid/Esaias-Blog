@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - Esaias Video Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h1>Esaias Video Blog</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="videos.html">Videos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="videos" class="video-section">
+    <h2>All Videos</h2>
+    <div class="video-container">
+        <div class="video-card active" data-category="category1">
+            <video src="./a_new_futuristic_car_33758b.mp4" muted loop autoplay></video>
+            <h3>Video Title 1</h3>
+            <p>Short description of the video.</p>
+        </div>
+        <div class="video-card" data-category="category2">
+            <video src="./a_next_gen_headphone_d8b0f9.mp4" muted loop autoplay></video>
+            <h3>Video Title 2</h3>
+            <p>Short description of the video.</p>
+        </div>
+        <div class="video-card" data-category="category1">
+            <video src="./a_next_gen_headphone_d8b0f9.mp4" muted loop autoplay></video>
+            <h3>Video Title 3</h3>
+            <p>Short description of the video.</p>
+        </div>
+        <div class="video-card" data-category="category2">
+            <video src="./a_new_futuristic_car_33758b.mp4" muted loop autoplay></video>
+            <h3>Video Title 4</h3>
+            <p>Short description of the video.</p>
+        </div>
+        <div class="video-card" data-category="category1">
+            <video src="./a_new_futuristic_car_33758b.mp4" muted loop autoplay></video>
+            <h3>Video Title 5</h3>
+            <p>Short description of the video.</p>
+        </div>
+        <div class="video-card" data-category="category2">
+            <video src="./a_new_futuristic_car_33758b.mp4" muted loop autoplay></video>
+            <h3>Video Title 6</h3>
+            <p>Short description of the video.</p>
+        </div>
+        <div class="video-card" data-category="category1">
+            <video src="./a_new_futuristic_car_33758b.mp4" muted loop autoplay></video>
+            <h3>Video Title 7</h3>
+            <p>Short description of the video.</p>
+        </div>
+        <div class="video-card" data-category="category2">
+            <video src="./a_next_gen_headphone_d8b0f9.mp4" muted loop autoplay></video>
+            <h3>Video Title 8</h3>
+            <p>Short description of the video.</p>
+        </div>
+    </div>
+    <div class="carousel-controls">
+        <button class="prev" onclick="changeVideo(-1)">&#10094;</button>
+        <button class="next" onclick="changeVideo(1)">&#10095;</button>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Modern Video Blog. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
